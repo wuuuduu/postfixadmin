@@ -19,6 +19,11 @@ class Hooks {
     private static $instance = null;
 
     /**
+     * @var \Hooks\Hooks
+     */
+    private $hooks;
+
+    /**
      * nuke it.
      */
     public static function shutdown() {
