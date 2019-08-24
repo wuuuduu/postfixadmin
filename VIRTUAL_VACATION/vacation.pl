@@ -465,7 +465,7 @@ sub send_vacation_email {
             },
             ssl  => $smtp_ssl,
             timeout => $smtp_timeout,
-            localaddr => $rr,
+            localaddr => $smtp_client,
             debug => 0,
         };
 
